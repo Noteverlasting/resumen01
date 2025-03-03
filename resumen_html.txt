@@ -120,3 +120,20 @@ ERRORES COMUNES
 
 -- Que falte la etiqueta de cierre:
     <div> ...contenido...
+
+
+Pasos ordenados para inicializar la subida por git:
+
+1.Abrir terminal
+-comandos:
+    git init
+    
+    git add .    <-- AÑADE todos los archivos (por el .)
+
+    git commit -m "Etc..."
+
+    $ git remote add origin https://github.com/Noteverlasting/resumen01.git
+    git branch -M main
+
+
+    git push -u origin main
