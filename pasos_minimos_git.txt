@@ -4,10 +4,12 @@ Pasos ordenados para inicializar la subida por git:
 -comandos:
     git init
     
-    git add 
+    git add .    <-- AÑADE todos los archivos (por el .)
 
     git commit -m "Etc..."
 
     $ git remote add origin https://github.com/classes
     git branch -M main
-    git pus -u origin main
+
+
+    git push -u origin main
