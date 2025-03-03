@@ -1,0 +1,122 @@
+RESUMEN HTML
+
+Sintaxis:
+-- La mayoría de etiquetas constan de apertura y cierre. De esta manera:
+    <etiqueta> ...contenido... </etiqueta>
+
+-- No obstante, hay importantes excepciones como:
+    <img>       IMAGENES
+    <input>     FORMULARIOS
+    <br>        SALTO DE LINEA
+    <hr>        LINEA SEPARATORIA
+
+-- Junto a las etiquetas usaremos a menudo atributos, que, a veces, son obligatorios. Por ejemplo:
+    <p id="nota1">      EN ESTE CASO EL ATRIBUTO SE HA UTILIZADO PARA SELECCIONAR LA ETIQUETA, PERO NO ES ESTRICTAMENTE OBLIGATORIO.
+    <img src="origen_imagen" alt="descripcion_imagen">      ESTOS DOS SÍ QUE SON OBLIGATORIOS.
+
+
+ETIQUETAS DE SOLO TEXTO
+
+-- Títulos:
+    <h1>,<h2>,<h3>,<h4>,<h5>,<h6>    SON SEMÁNTICAS Y JERÁRQUICAS
+
+-- Párrafos normales:
+    <p>
+
+-- Citas:
+    <q> DEFINIR CITA
+    <cite> DEFINIR CITADO
+        EJEMPLO: <q>La tierra es plana según (<cite> Terraplanistas </cite>)</q>
+
+-- Especificar una parte de un texto:
+    <span> texto </span>
+
+-- Dar preformato a un texto
+    <pre> texto </pre>
+
+ENLACES 
+
+-- Crear enlace:
+    <a> ANCHOR
+
+ETIQUETAS PARA TEXTO, IMÁGENES Y MÁS
+
+-- Listas:
+
+    ORDENADAS -> <ol> 
+                    <li></li> 
+                </ol>
+
+    DESORDENADAS -> <ul> 
+                        <li></li> 
+                    </ul>
+
+    DESCRIPCIÓN/DEFINICIÓN ->   <dl> 
+                                    <dt> ... </dt> 
+                                    <dd> ... </dd> 
+                                </dl>
+
+-- Tablas:
+
+    CREAR TABLA ->  <table>
+
+    CREAR UNA FILA -> <tr>
+
+    CREAR CELDA CON TITULO -> <th>
+        INDICAR QUE ES EL TÍTULO DE LA TABLA -> <thead>
+
+    CREAR CELDA DE INFORMACIÓN -> <td>
+        INDICAR QUE ES EL CUERPO DE LA TABLA -> <tbody>
+        INDICAR QUE ES EL FOOTER DE LA TABLA -> <tfoot>
+
+-- Desplegable:
+
+    CREAR EL TITULAR DEL DESPLEGABLE -> <details>
+    CREAR EL CONTENIDO DEL DESPLEGABLE -> <summary>
+        Construccion:   <details>
+                            <summary> ... </summary>
+                        </details>
+
+
+-- Enlaces:
+
+    CREAR ENLACE -> <a> (anchor)
+    ENVIAR MAIL -> <a href="mailto:xx@xx.com">
+    LLAMAR TLF -> <a href="+111111">
+
+
+IMÁGENES
+
+-- Raster o de mapa de bits:
+    ·Para crearlas o modificarlas necesitas un software fotográfico o una cámara, sus ficheros son siempre de tipo binario·
+    *Formatos Históricos:   .bmp (pesado, sin capas/transparencia) 
+                            .jpg (comprimido, sin transparencia)
+                            .png (pesado, con transparencia)
+                            .gif (muy comprimido, paleta de color reducida con transparencia)
+                            .tiff (muy pesado, sin perdidas, con datos y capas para fotografía)
+
+    *Formatos Modernos:     .webp (compresión para web, formato de Google)
+                            .avif (compresión alta)
+                            .heic (compresión alta, formato de Apple)
+
+-- Vectoriales:
+    ·Se construyen con formas geométricas y son editables directamente ya que sus ficheros son de texto plano·
+    *Formatos Utilizados:   .svg (Scalable Vector Graphics)
+                            .ai (formato Adobe Illustrator)
+                            .pdf (Portable Document File)
+
+
+
+
+
+
+ERRORES COMUNES
+
+-- No cerrar adecuadamente las etiquetas. Por ejemplo:
+    <div> <p> Hola </div> </p>
+
+-- Confundir los niveles de las etiquetas. Por ejemplo:
+    <section> 1 <section> 2 </section> 1 </section>     TENEMOS LA SECCION DENTRO DE LA OTRA SECCIÓN CUANDO LAS QUEREMOS SEPARADAS.
+
+-- Que falte la etiqueta de cierre:
+    <div> ...contenido...

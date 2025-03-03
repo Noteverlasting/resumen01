@@ -1,0 +1,13 @@
+Pasos ordenados para inicializar la subida por git:
+
+1.Abrir terminal
+-comandos:
+    git init
+    
+    git add 
+
+    git commit -m "Etc..."
+
+    $ git remote add origin https://github.com/classes
+    git branch -M main
+    git pus -u origin main
