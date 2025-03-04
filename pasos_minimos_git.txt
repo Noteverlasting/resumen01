@@ -8,7 +8,9 @@ Pasos ordenados para inicializar la subida por git:
 
     git commit -m "Etc..."
 
-    $ git remote add origin https://github.com/Noteverlasting/resumen01.git
+	-> CREAR REPOSITORIO EN GITHUB (WEB) - nos facilitará el código al final de la página
+
+    $ git remote add origin https://github.com/Noteverlasting/resumen01.git (por ejemplo)
     git branch -M main
 
 
